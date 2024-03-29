@@ -5,8 +5,6 @@ import { getCanonicalUrl } from '@/const/url';
 import Page from './home';
 import Redirect from './home/Redirect';
 
-export const runtime = 'edge' // Cloudflare: 'nodejs' (default) | 'edge'
-
 const Index = () => (
   <>
     <Page />
