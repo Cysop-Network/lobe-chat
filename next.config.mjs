@@ -48,13 +48,12 @@ const nextConfig = {
   reactStrictMode: true,
 
   webpack(config) {
-    config.exports = { 
-      optimization: {
-        splitChunks: {
-          maxSize: 26214400 // 25 MiB cloudflare limit
-        }
-      }
+    // Correctly set the optimization.splitChunks.maxSize
+    if (!config.optimization.splitChunks) {
+      config.optimization.splitChunks = {};
     }
+    config.optimization.splitChunks.maxSize = 26214400; // 25 MiB cloudflare limit
+
     config.experiments = {
       asyncWebAssembly: true,
       layers: true,
