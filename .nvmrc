@@ -4,9 +4,12 @@
 #v18.20.0
 #lts/hydrogen
 
-# Fetch the Node.js versions data, filter for Hydrogen LTS versions, sort them, and get the latest
-latestHydrogen=$(curl -s https://nodejs.org/dist/index.json | jq '[.[] | select(.lts=="Hydrogen")] | sort_by(.version) | last')
+# Fetch the Node.js versions data
+data=$(curl -s https://nodejs.org/dist/index.json)
 
-if [ ! -z "$latestHydrogen" ] && [ "$latestHydrogen" != "null" ]; then
-  echo $latestHydrogen | jq -r '.version'
+# Filter for Hydrogen LTS versions, extract version numbers, sort them, and get the latest
+latestHydrogen=$(echo "$data" | grep '"lts":"Hydrogen"' | grep -o '"version": *"[^"]*"' | awk -F '"' '{print $4}' | sort -V | tail -n 1)
+
+if [ ! -z "$latestHydrogen" ]; then
+  echo "$latestHydrogen"
 fi
