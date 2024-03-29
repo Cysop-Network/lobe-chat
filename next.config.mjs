@@ -59,7 +59,8 @@ const nextConfig = {
         test: /[\\/]node_modules[\\/]/,
         priority: -5,
         reuseExistingChunk: true,
-        chunks: "initial",
+        //chunks: "initial",
+        chunks: "all", // gotta catch em all (and enforce a tiny size.)
         name: "common_app",
         minSize: 0,
       },
