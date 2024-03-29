@@ -2,6 +2,131 @@
 
 # Changelog
 
+## [Version 0.145.0](https://github.com/lobehub/lobe-chat/compare/v0.144.1...v0.145.0)
+
+<sup>Released on **2024-03-29**</sup>
+
+#### ✨ Features
+
+- **misc**: Support TogetherAI as new model provider.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Support TogetherAI as new model provider, closes [#1709](https://github.com/lobehub/lobe-chat/issues/1709) ([d6921ef](https://github.com/lobehub/lobe-chat/commit/d6921ef))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 0.144.1](https://github.com/lobehub/lobe-chat/compare/v0.144.0...v0.144.1)
+
+<sup>Released on **2024-03-29**</sup>
+
+#### 🐛 Bug Fixes
+
+- **ollama**: Suppport vision for LLaVA models.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **ollama**: Suppport vision for LLaVA models, closes [#1791](https://github.com/lobehub/lobe-chat/issues/1791) ([e2d3de6](https://github.com/lobehub/lobe-chat/commit/e2d3de6))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 0.144.0](https://github.com/lobehub/lobe-chat/compare/v0.143.0...v0.144.0)
+
+<sup>Released on **2024-03-29**</sup>
+
+#### ✨ Features
+
+- **misc**: Support authentik as sso.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Support authentik as sso, closes [#1650](https://github.com/lobehub/lobe-chat/issues/1650) ([181dfa5](https://github.com/lobehub/lobe-chat/commit/181dfa5))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 0.143.0](https://github.com/lobehub/lobe-chat/compare/v0.142.9...v0.143.0)
+
+<sup>Released on **2024-03-28**</sup>
+
+#### ✨ Features
+
+- **misc**: Add Bulgarian translation.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Add Bulgarian translation, closes [#1732](https://github.com/lobehub/lobe-chat/issues/1732) ([e181dd1](https://github.com/lobehub/lobe-chat/commit/e181dd1))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 0.142.9](https://github.com/lobehub/lobe-chat/compare/v0.142.8...v0.142.9)
+
+<sup>Released on **2024-03-28**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Fix Add agent and Converse button not jump.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Fix Add agent and Converse button not jump, closes [#1785](https://github.com/lobehub/lobe-chat/issues/1785) ([a52799c](https://github.com/lobehub/lobe-chat/commit/a52799c))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version 0.142.8](https://github.com/lobehub/lobe-chat/compare/v0.142.7...v0.142.8)
 
 <sup>Released on **2024-03-28**</sup>
