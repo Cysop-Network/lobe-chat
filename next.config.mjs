@@ -52,8 +52,30 @@ const nextConfig = {
     if (!config.optimization.splitChunks) {
       config.optimization.splitChunks = {};
     }
-    config.optimization.splitChunks.enforceSizeThreshold = 26214400; // 25 MiB cloudflare limit
-
+    config.optimization.splitChunks.enforceSizeThreshold: 26214400; // 25 MiB cloudflare limit
+    config.optimization.splitChunks.cacheGroups: {
+      common: {
+        test: /[\\/]node_modules[\\/]/,
+        priority: -5,
+        reuseExistingChunk: true,
+        chunks: "initial",
+        name: "common_app",
+        minSize: 0,
+      },
+      default: {
+        minChunks: 2,
+        priority: -20,
+        reuseExistingChunk: true,
+      },
+      // we are opting out of defaultVendors, so rest of the node modules will be part of default cacheGroup
+      defaultVendors: false,
+      reactPackage: {
+        test: /[\\/]node_modules[\\/](react|react-dom|react-router|react-router-dom)[\\/]/,
+        name: 'vendor_react',
+        chunks: "all",
+        priority: 10,
+      }
+    },
     config.experiments = {
       asyncWebAssembly: true,
       layers: true,
