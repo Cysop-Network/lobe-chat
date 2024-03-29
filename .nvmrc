@@ -1,2 +1,12 @@
-v18.20.0
+#!/bin/bash
+
+### Was
+#v18.20.0
 #lts/hydrogen
+
+# Fetch the Node.js versions data, filter for Hydrogen LTS versions, sort them, and get the latest
+latestHydrogen=$(curl -s https://nodejs.org/dist/index.json | jq '[.[] | select(.lts=="Hydrogen")] | sort_by(.version) | last')
+
+if [ ! -z "$latestHydrogen" ] && [ "$latestHydrogen" != "null" ]; then
+  echo $latestHydrogen | jq -r '.version'
+fi
