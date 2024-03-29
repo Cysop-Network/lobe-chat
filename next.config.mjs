@@ -48,7 +48,7 @@ const nextConfig = {
   reactStrictMode: true,
 
   webpack(config) {
-    // Correctly set the optimization.splitChunks.maxSize
+/*    // Correctly set the optimization.splitChunks.maxSize
     if (!config.optimization.splitChunks) {
       config.optimization.splitChunks = {};
     }
@@ -77,7 +77,7 @@ const nextConfig = {
         chunks: "all",
         priority: 10,
       }
-    },
+    },*/
     config.experiments = {
       asyncWebAssembly: true,
       layers: true,
