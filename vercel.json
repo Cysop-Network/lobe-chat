@@ -1,3 +1,4 @@
 {
-  "installCommand": "npx bun@1.0.30 install"
+  "installCommand": "npm run build",
+  "oldInstallCommand": "npx bun@1.0.30 install"
 }
