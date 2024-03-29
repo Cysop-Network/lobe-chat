@@ -52,7 +52,8 @@ const nextConfig = {
     if (!config.optimization.splitChunks) {
       config.optimization.splitChunks = {};
     }
-    config.optimization.splitChunks.enforceSizeThreshold = 26214400; // 25 MiB cloudflare limit
+    //config.optimization.splitChunks.enforceSizeThreshold = 26214400; // 25 MiB cloudflare limit
+    config.optimization.splitChunks.enforceSizeThreshold = 30000; // Be tiny damnit
     config.optimization.splitChunks.cacheGroups = {
       common: {
         test: /[\\/]node_modules[\\/]/,
