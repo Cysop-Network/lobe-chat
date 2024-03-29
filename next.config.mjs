@@ -51,7 +51,7 @@ const nextConfig = {
     config.exports = { 
       optimization: {
         splitChunks: {
-          maxSize = 26214400 // 25 MiB cloudflare limit
+          maxSize: 26214400 // 25 MiB cloudflare limit
         }
       }
     }
